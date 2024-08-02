@@ -41,7 +41,6 @@ struct WidgetsEntryView : View {
     var entry: Provider.Entry
 
     var body: some View {
-			Button.init(intent: LaunchAppIntent(favoriteEmoji: "12")) {
 				VStack {
 						Text("Time:")
 						Text(entry.date, style: .time)
@@ -49,7 +48,6 @@ struct WidgetsEntryView : View {
 						Text("Favorite Emoji:")
 						Text(entry.configuration.favoriteEmoji)
 				}
-			}.buttonStyle(.plain)
     }
 }
 
